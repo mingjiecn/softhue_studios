@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #f8f5f0;
+  --warm-gray: #6b635b;
+  --terracotta: #c17f59;
+  --sage: #8fa68c;
+  --charcoal: #2d2a26;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--cream);
+  color: var(--charcoal);
+}
+
+.font-display {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
