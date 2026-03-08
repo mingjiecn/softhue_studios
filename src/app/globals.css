@@ -18,6 +18,13 @@ body {
   color: var(--charcoal);
 }
 
+/* Improve tap responsiveness on mobile */
+@media (hover: none) and (pointer: coarse) {
+  button, a, [role="button"] {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
 .font-display {
   font-family: 'Cormorant Garamond', Georgia, serif;
 }

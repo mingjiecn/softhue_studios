@@ -182,7 +182,7 @@ export default function CheckoutPage() {
 
       <Header subtitle="Checkout" />
 
-      <main className="max-w-4xl mx-auto px-6 py-12">
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         <form onSubmit={handlePlaceOrder} className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Order Info */}
@@ -192,7 +192,7 @@ export default function CheckoutPage() {
                   Contact Information
                 </h2>
                 <div className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="firstName" className="block text-sm font-medium text-warm-gray mb-1">
                         First name
@@ -272,7 +272,7 @@ export default function CheckoutPage() {
                       className={inputClass}
                     />
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="city" className="block text-sm font-medium text-warm-gray mb-1">
                         City
@@ -383,7 +383,7 @@ export default function CheckoutPage() {
 
             {/* Order Summary */}
             <div className="h-fit">
-              <section className="bg-white rounded-xl border border-stone-200/60 p-6 shadow-sm sticky top-24">
+              <section className="bg-white rounded-xl border border-stone-200/60 p-6 shadow-sm md:sticky md:top-24">
                 <h2 className="font-display text-lg font-semibold text-charcoal mb-4">
                   Order Summary
                 </h2>
@@ -424,7 +424,7 @@ export default function CheckoutPage() {
                 </p>
                 <button
                   type="submit"
-                  className="mt-6 w-full py-3 bg-charcoal text-cream font-medium rounded-lg hover:bg-stone-700 transition-colors"
+                  className="mt-6 w-full min-h-[48px] py-3 bg-charcoal text-cream font-medium rounded-lg hover:bg-stone-700 transition-colors touch-manipulation"
                 >
                   Place Order (Send via Email)
                 </button>

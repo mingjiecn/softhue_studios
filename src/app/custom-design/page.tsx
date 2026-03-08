@@ -49,8 +49,8 @@ export default function CustomDesignPage() {
     return (
       <div className="min-h-screen flex flex-col">
         <Header subtitle="Added to Cart" />
-        <main className="flex-1 max-w-2xl mx-auto px-6 py-16 text-center">
-          <div className="bg-white rounded-xl border border-stone-200/60 p-12 shadow-sm">
+        <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
+          <div className="bg-white rounded-xl border border-stone-200/60 p-6 sm:p-12 shadow-sm">
             <p className="text-4xl mb-4">✓</p>
             <h2 className="font-display text-2xl font-semibold text-charcoal mb-4">
               Added to Cart
@@ -93,7 +93,7 @@ export default function CustomDesignPage() {
     <div className="min-h-screen flex flex-col">
       <Header subtitle="Custom Design Request" />
 
-      <main className="flex-1 max-w-2xl mx-auto px-6 py-12 w-full">
+      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-8 sm:py-12 w-full">
         <form onSubmit={handleSubmit} className="space-y-8">
           <div>
             <label

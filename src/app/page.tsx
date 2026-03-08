@@ -8,7 +8,7 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Promotion Banner - 20% Off */}
       <div className="bg-gradient-to-r from-amber-100 to-rose-100 border-b border-amber-200/50">
-        <div className="max-w-6xl mx-auto px-6 py-3 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 text-center">
           <p className="text-charcoal font-medium tracking-wide">
             🎨 <span className="font-semibold text-amber-800">Opening Sale: 20% off sitewide! Ends 4/16</span>
           </p>
@@ -18,12 +18,12 @@ export default function Home() {
       {/* Header with Studio Name + Cart */}
       <Header />
 
-      <main className="max-w-6xl mx-auto px-6 py-12 md:py-16">
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
         <WelcomeGreeting />
         <SearchableProductGallery />
 
         {/* Custom Design Section */}
-        <section className="bg-white rounded-xl border border-stone-200/60 p-8 md:p-12 shadow-sm">
+        <section className="bg-white rounded-xl border border-stone-200/60 p-6 sm:p-8 md:p-12 shadow-sm">
           <div className="flex flex-col md:flex-row md:items-center gap-8">
             <div className="flex-1">
               <h2 className="font-display text-2xl md:text-3xl font-semibold text-charcoal mb-4">

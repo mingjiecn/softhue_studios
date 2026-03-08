@@ -82,7 +82,7 @@ export function SearchableProductGallery() {
               : `Search Results (${filteredProducts.length})`}
           </h2>
           {filteredProducts.length > 0 && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
               {filteredProducts.map((product) => (
                 <PaintingCard key={product.id} painting={product} />
               ))}
@@ -95,7 +95,7 @@ export function SearchableProductGallery() {
             <h2 className="font-display text-2xl md:text-3xl font-semibold text-charcoal mb-8 text-center">
               Paintings Available for Purchase
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
               {sortedPaintings.map((painting) => (
                 <PaintingCard key={painting.id} painting={painting} />
               ))}
@@ -105,7 +105,7 @@ export function SearchableProductGallery() {
             <h3 className="font-display text-2xl md:text-3xl font-semibold text-charcoal mb-8 text-center">
               Digital Art Prints
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
               {sortedDigitalPrints.map((item) => (
                 <PaintingCard key={item.id} painting={item} />
               ))}

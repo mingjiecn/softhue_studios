@@ -6,7 +6,7 @@ export function AccountButton() {
   return (
     <Link
       href="/account"
-      className="flex items-center justify-center w-10 h-10 rounded-lg border border-stone-200 bg-white/80 hover:bg-stone-50 transition-colors text-charcoal"
+      className="flex items-center justify-center min-w-[44px] min-h-[44px] w-11 h-11 rounded-lg border border-stone-200 bg-white/80 hover:bg-stone-50 transition-colors text-charcoal touch-manipulation"
       aria-label="Account"
     >
       <svg

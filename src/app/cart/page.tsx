@@ -20,7 +20,7 @@ export default function CartPage() {
 
       <Header subtitle="Your Cart" />
 
-      <main className="max-w-4xl mx-auto px-6 py-12">
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         {items.length === 0 ? (
           <div className="bg-white rounded-xl border border-stone-200/60 p-12 text-center">
             <p className="text-warm-gray text-lg mb-6">Your cart is empty.</p>
@@ -70,7 +70,7 @@ export default function CartPage() {
                       </p>
                     )}
                   </div>
-                  <div className="flex items-center gap-3">
+                  <div className="flex flex-wrap items-center gap-2 sm:gap-3">
                     <label className="flex items-center gap-1">
                       <span className="text-sm text-warm-gray">Qty</span>
                       <input
@@ -89,7 +89,7 @@ export default function CartPage() {
                     <button
                       type="button"
                       onClick={() => removeItem(item.id)}
-                      className="text-warm-gray hover:text-red-600 text-sm"
+                      className="min-h-[44px] min-w-[44px] px-3 text-warm-gray hover:text-red-600 hover:bg-red-50 text-sm rounded-lg transition-colors touch-manipulation"
                     >
                       Remove
                     </button>

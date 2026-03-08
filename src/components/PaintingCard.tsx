@@ -68,7 +68,7 @@ export function PaintingCard({ painting }: { painting: Painting }) {
         </div>
         <button
           onClick={handleAddToCart}
-          className="mt-3 w-full py-2.5 bg-charcoal text-cream text-sm font-medium rounded hover:bg-stone-700 transition-colors"
+          className="mt-3 w-full min-h-[44px] py-2.5 bg-charcoal text-cream text-sm font-medium rounded hover:bg-stone-700 transition-colors touch-manipulation"
         >
           Add to Cart
         </button>

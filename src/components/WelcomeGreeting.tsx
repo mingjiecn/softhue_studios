@@ -18,7 +18,7 @@ export function WelcomeGreeting() {
   const name = profile.firstName.trim();
 
   return (
-    <p className="font-display text-xl text-charcoal mb-6">
+    <p className="font-display text-base sm:text-xl text-charcoal mb-6">
       {name ? (
         <>
           Happy {DAYS[new Date().getDay()]}, {name}!

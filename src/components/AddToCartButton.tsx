@@ -21,7 +21,7 @@ export function AddToCartButton({ product }: { product: Product }) {
   return (
     <button
       onClick={handleClick}
-      className="w-full py-3 px-6 bg-charcoal text-cream font-medium rounded-lg hover:bg-stone-700 transition-colors"
+      className="w-full min-h-[48px] py-3 px-6 bg-charcoal text-cream font-medium rounded-lg hover:bg-stone-700 transition-colors touch-manipulation"
     >
       Add to Cart
     </button>

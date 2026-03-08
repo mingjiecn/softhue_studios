@@ -30,7 +30,7 @@ export default function WishlistPage() {
 
       <Header subtitle="Wishlist" />
 
-      <main className="max-w-4xl mx-auto px-6 py-12">
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         {items.length === 0 ? (
           <div className="bg-white rounded-xl border border-stone-200/60 p-12 text-center">
             <p className="text-warm-gray text-lg mb-6">Your wishlist is empty.</p>
@@ -69,19 +69,19 @@ export default function WishlistPage() {
                     </Link>
                     <p className="text-warm-gray text-sm">${item.price}</p>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex flex-wrap items-center gap-2">
                     <WishlistStarButton product={item} />
                     <button
                       type="button"
                       onClick={() => handleAddToCart(item)}
-                      className="px-4 py-2 bg-charcoal text-cream text-sm font-medium rounded-lg hover:bg-stone-700 transition-colors"
+                      className="min-h-[44px] px-4 py-2 bg-charcoal text-cream text-sm font-medium rounded-lg hover:bg-stone-700 transition-colors touch-manipulation"
                     >
                       Add to Cart
                     </button>
                     <button
                       type="button"
                       onClick={() => removeItem(item.id)}
-                      className="text-warm-gray hover:text-red-600 text-sm"
+                      className="min-h-[44px] min-w-[44px] px-3 text-warm-gray hover:text-red-600 hover:bg-red-50 text-sm rounded-lg transition-colors touch-manipulation"
                     >
                       Remove
                     </button>

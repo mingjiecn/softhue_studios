@@ -10,7 +10,7 @@ export function CartButton() {
   return (
     <Link
       href="/cart"
-      className="flex items-center gap-2 px-4 py-2 rounded-lg border border-stone-200 bg-white/80 hover:bg-stone-50 transition-colors text-charcoal font-medium"
+      className="flex items-center gap-2 min-h-[44px] px-4 py-2.5 rounded-lg border border-stone-200 bg-white/80 hover:bg-stone-50 transition-colors text-charcoal font-medium touch-manipulation"
     >
       <span aria-hidden>🛒</span>
       <span>Cart</span>

@@ -38,9 +38,9 @@ export default function AccountPage() {
 
       <Header subtitle="My Account" />
 
-      <main className="max-w-2xl mx-auto px-6 py-12">
+      <main className="max-w-2xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         {/* Profile Form */}
-        <section className="bg-white rounded-xl border border-stone-200/60 p-8 mb-8 shadow-sm">
+        <section className="bg-white rounded-xl border border-stone-200/60 p-6 sm:p-8 mb-8 shadow-sm">
           <h2 className="font-display text-xl font-semibold text-charcoal mb-6">
             Profile Details
           </h2>

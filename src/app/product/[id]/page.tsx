@@ -26,7 +26,7 @@ export default async function ProductPage({ params }: Props) {
 
       <Header subtitle={product.title} />
 
-      <main className="max-w-5xl mx-auto px-6 py-12">
+      <main className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         <Link
           href="/"
           className="inline-block text-warm-gray text-sm hover:text-charcoal mb-8"
@@ -57,7 +57,7 @@ export default async function ProductPage({ params }: Props) {
             </div>
             <WatermarkOverlay size="lg" />
           </div>
-          <div className="md:w-1/2 p-8 md:p-10 flex flex-col justify-center">
+          <div className="md:w-1/2 p-6 sm:p-8 md:p-10 flex flex-col justify-center">
             <p className="text-sm text-warm-gray uppercase tracking-widest mb-2">
               {product.category === "painting" ? "Original Painting" : "Digital Art Print"}
             </p>

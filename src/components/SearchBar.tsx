@@ -30,9 +30,9 @@ export function SearchBar({
 }: SearchBarProps) {
   return (
     <div className="bg-white border-b border-stone-200/60 py-4">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
-          <div className="flex-1 relative">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="flex flex-col gap-3">
+          <div className="flex-1 relative min-w-0">
             <span className="absolute left-3 top-1/2 -translate-y-1/2 text-stone-400" aria-hidden>
               🔍
             </span>
@@ -45,11 +45,11 @@ export function SearchBar({
               aria-label="Search products"
             />
           </div>
-          <div className="flex flex-wrap gap-2 sm:gap-3">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 sm:flex-wrap">
             <select
               value={category}
               onChange={(e) => onCategoryChange(e.target.value as CategoryFilter)}
-              className="px-4 py-2.5 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-terracotta/50 focus:border-terracotta bg-white text-charcoal min-w-[140px]"
+              className="w-full sm:min-w-[140px] px-4 py-2.5 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-terracotta/50 focus:border-terracotta bg-white text-charcoal touch-manipulation"
               aria-label="Filter by category"
             >
               <option value="all">All Categories</option>
@@ -59,7 +59,7 @@ export function SearchBar({
             <select
               value={sort}
               onChange={(e) => onSortChange(e.target.value as SortOption)}
-              className="px-4 py-2.5 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-terracotta/50 focus:border-terracotta bg-white text-charcoal min-w-[140px]"
+              className="w-full sm:min-w-[140px] px-4 py-2.5 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-terracotta/50 focus:border-terracotta bg-white text-charcoal touch-manipulation"
               aria-label="Sort by"
               title="Sort results"
             >

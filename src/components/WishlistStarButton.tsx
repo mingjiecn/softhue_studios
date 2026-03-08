@@ -19,7 +19,7 @@ export function WishlistStarButton({ product, className = "" }: WishlistStarProp
         e.stopPropagation();
         toggleItem(product);
       }}
-      className={`p-2 rounded-full hover:bg-white/80 transition-colors ${className}`}
+      className={`min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full hover:bg-white/80 transition-colors touch-manipulation ${className}`}
       aria-label={inWishlist ? "Remove from wishlist" : "Add to wishlist"}
     >
       {inWishlist ? (
