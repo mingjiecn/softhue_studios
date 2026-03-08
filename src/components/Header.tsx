@@ -12,11 +12,11 @@ export function Header({ subtitle = "Original Art • Handcrafted with Care" }: 
   return (
     <header className="sticky top-0 z-10">
       <div className="border-b border-stone-200/60 bg-white/70 backdrop-blur-sm relative min-h-[5rem] flex items-center">
-        <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 flex items-center justify-between gap-2">
+        <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 flex items-center gap-3">
           <button
             type="button"
             onClick={toggle}
-            className="flex-shrink-0 min-w-[44px] min-h-[44px] flex items-center justify-center -ml-2 text-charcoal hover:bg-stone-100 rounded-lg transition-colors touch-manipulation"
+            className="flex-shrink-0 min-w-[44px] min-h-[44px] flex items-center justify-center -ml-1 text-charcoal hover:bg-stone-100 rounded-lg transition-colors touch-manipulation"
             aria-label="Open menu"
           >
             <svg
@@ -38,13 +38,13 @@ export function Header({ subtitle = "Original Art • Handcrafted with Care" }: 
           </button>
           <Link
             href="/"
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center max-w-[50vw] min-w-0"
+            className="flex-1 min-w-0 flex justify-center overflow-hidden"
           >
-            <h1 className="font-display text-xl sm:text-3xl md:text-4xl font-semibold text-charcoal tracking-tight truncate">
+            <h1 className="font-display text-xl sm:text-3xl md:text-4xl font-semibold text-charcoal tracking-tight truncate text-center">
               SoftHue Studios
             </h1>
           </Link>
-          <div className="flex items-center gap-1 sm:gap-2 ml-auto flex-shrink-0">
+          <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
             <WishlistButton />
             <AccountButton />
             <CartButton />
