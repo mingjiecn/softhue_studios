@@ -39,7 +39,6 @@ export default function CustomDesignPage() {
       title: "Custom Design Request",
       price: customPrice,
       image: "",
-      quantity: 1,
       customDescription: description,
       originalPrice: CUSTOM_PAINTING_BEFORE_SALE,
     });
